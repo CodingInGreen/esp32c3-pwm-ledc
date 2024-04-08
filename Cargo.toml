@@ -1,0 +1,15 @@
+[package]
+name = "esp32c3-pwm-servos"
+version = "0.1.0"
+authors = ["Adam Hott <24814301+CodingInGreen@users.noreply.github.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[profile.release]
+debug = true
+
+[dependencies]
+esp-hal = { version = "0.16.0" , features  = ["esp32c3"] }
+esp-backtrace = { version = "0.11.0", features = ["esp32c3", "panic-handler", "exception-handler", "println"] }
+esp-println = { version = "0.9.0", features = ["esp32c3"] }
+
